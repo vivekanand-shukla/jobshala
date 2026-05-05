@@ -7,7 +7,6 @@ include '../includes/auth.php';
 
 // check if provider is logged in
 requireLogin('provider');
-
 // get job id from form
 $jobId = $_POST['job_id'];
 $jobId = intval($jobId);

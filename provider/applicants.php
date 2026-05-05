@@ -43,7 +43,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     header('Location: /jobshala/provider/applicants.php?job_id=' . $jobId . '&updated=1');
     exit();
 }
-
 // get all applications for this job
 $appsQuery  = "SELECT applications.*, users.full_name, users.email FROM applications JOIN users ON applications.seeker_id = users.id WHERE applications.job_id = $jobId ORDER BY applications.applied_at DESC";
 $appsResult = mysqli_query($conn, $appsQuery);

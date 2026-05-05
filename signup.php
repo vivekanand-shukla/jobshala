@@ -113,8 +113,7 @@ include 'includes/header.php';
                  value="<?php if (isset($_POST['full_name'])) echo $_POST['full_name']; ?>" required />
         </div>
       </div>
-
-      <!-- company name - only shown for providers -->
+ <!-- company name - only shown for providers -->
       <div class="form-group" id="provider-fields" style="display:none;">
         <label class="form-label" for="company_name">Company Name</label>
         <div class="input-icon-wrap">

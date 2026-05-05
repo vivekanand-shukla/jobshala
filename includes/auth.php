@@ -1,3 +1,4 @@
+
 <?php
 // auth helper functions
 // these functions help check if user is logged in

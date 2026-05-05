@@ -1,7 +1,6 @@
 <?php
 // login page
 // this page lets users login to their account
-
 // include database connection
 include 'includes/db.php';
 

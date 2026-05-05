@@ -1,15 +1,8 @@
--- ============================================================
---  Jobshala Database Setup
---  Run this in phpMyAdmin or MySQL CLI:
---  mysql -u root -p < database.sql
--- ============================================================
-
 CREATE DATABASE IF NOT EXISTS jobshala CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE jobshala;
 
--- -------------------------------------------------------
--- USERS TABLE (job seekers + job providers)
--- -------------------------------------------------------
+
+
 CREATE TABLE users (
     id          INT AUTO_INCREMENT PRIMARY KEY,
     full_name   VARCHAR(100) NOT NULL,
@@ -20,9 +13,7 @@ CREATE TABLE users (
     created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- -------------------------------------------------------
--- ADMIN TABLE
--- -------------------------------------------------------
+
 CREATE TABLE admin (
     id              INT AUTO_INCREMENT PRIMARY KEY,
     email           VARCHAR(150) NOT NULL UNIQUE,
@@ -34,13 +25,12 @@ CREATE TABLE admin (
 INSERT INTO admin (email, password, master_key)
 VALUES (
     'admin@jobshala.com',
-    '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi',
-    '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi'
+    '$2y$10$4nuBXC0fYmCH7N3hFsbJb.5bRyAR4ap1mHBN.ZBWsTmhDIVZ/t9bq',
+    '$2y$10$O4hNPJVl7jdPkEIpROTbvuBeHR4sIn0vmHPo6DyH3UYAk9fGDPWWu'
 );
 
--- -------------------------------------------------------
--- JOBS TABLE
--- -------------------------------------------------------
+
+
 CREATE TABLE jobs (
     id              INT AUTO_INCREMENT PRIMARY KEY,
     provider_id     INT NOT NULL,
@@ -59,9 +49,7 @@ CREATE TABLE jobs (
     FOREIGN KEY (provider_id) REFERENCES users(id) ON DELETE CASCADE
 );
 
--- -------------------------------------------------------
--- APPLICATIONS TABLE
--- -------------------------------------------------------
+
 CREATE TABLE applications (
     id              INT AUTO_INCREMENT PRIMARY KEY,
     job_id          INT NOT NULL,

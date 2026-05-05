@@ -1,8 +1,6 @@
 <?php
 // home page of jobshala
-// shows hero section, categories and recent jobs
 
-// include database and auth files
 include 'includes/db.php';
 include 'includes/auth.php';
 
@@ -149,5 +147,4 @@ include 'includes/header.php';
     </div>
   </div>
 </section>
-
-<?php include 'includes/footer.php'; ?>
+<?php include 'includes/footer.php'; ?>  

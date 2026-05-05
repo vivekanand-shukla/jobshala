@@ -25,10 +25,7 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
     }
     ?>
   </title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+  
   <link rel="stylesheet" href="/jobshala/css/style.css" />
 </head>
 <body>
@@ -46,6 +43,8 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
     <nav id="header-nav">
       <a href="/jobshala/index.php" <?php if ($currentPage == 'index') echo 'class="active"'; ?>>Home</a>
       <a href="/jobshala/seeker/browse.php" <?php if ($currentPage == 'browse') echo 'class="active"'; ?>>Jobs</a>
+      
+
       
       <!-- <a href="/jobshala/seeker/browse.php?type=internship">Freshers</a> -->
       <!-- <a href="#courses">Courses</a> -->
@@ -77,6 +76,5 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
       } // end if else
       ?>
     </div>
-
-  </div>
+</div>
 </header>

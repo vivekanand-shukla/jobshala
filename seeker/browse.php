@@ -41,7 +41,6 @@ if ($location != '') {
 if ($workMode != '') {
     $whereConditions[] = "jobs.work_mode = '$workMode'";
 }
-
 // join all conditions with AND
 $whereSQL = implode(' AND ', $whereConditions);
 

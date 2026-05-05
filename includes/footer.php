@@ -14,7 +14,6 @@
     </div>
   </div>
 </footer>
-
 <script src="/jobshala/js/main.js"></script>
 </body>
 </html>

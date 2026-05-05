@@ -97,8 +97,7 @@ include 'includes/header.php';
               <div style="font-size:.8rem;color:var(--text-muted);margin-top:2px;">Jabalpur, Madhya Pradesh, India</div>
             </div>
           </div>
-
-          <div id="ci-hours" style="display:flex;align-items:flex-start;gap:14px;background:#f0fdf9;border:1.5px solid #a7f3d0;border-radius:var(--radius-md);padding:18px;">
+           <div id="ci-hours" style="display:flex;align-items:flex-start;gap:14px;background:#f0fdf9;border:1.5px solid #a7f3d0;border-radius:var(--radius-md);padding:18px;">
             <div style="width:42px;height:42px;background:#d1fae5;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
               <i class="ph ph-clock" style="color:#065f46;font-size:1.2rem;"></i>
             </div>

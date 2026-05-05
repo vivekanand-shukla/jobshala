@@ -168,7 +168,7 @@ include '../includes/header.php';
                           id="delete-form-<?php echo $job['id']; ?>">
                       <input type="hidden" name="job_id" value="<?php echo $job['id']; ?>" />
                       <button type="submit" class="btn btn-danger btn-sm" id="pjob-del-<?php echo $job['id']; ?>">
-                        <i class="ph ph-trash"></i>
+                        <i class="ph ph-trash"></i>Delete
                       </button>
                     </form>
                   </div>

@@ -39,7 +39,6 @@ include 'includes/header.php';
     </p>
   </div>
 </section>
-
 <!-- live stats from database -->
 <section id="about-stats" style="padding:48px 0;background:#fff;border-bottom:1px solid var(--border);">
   <div class="container">
